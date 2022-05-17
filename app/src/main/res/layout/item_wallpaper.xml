@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/wallpaper"
         app:layout_constraintDimensionRatio="1:2"
         android:scaleType="centerCrop"
         android:src="@drawable/Nature_Pink"
@@ -28,7 +28,7 @@
         android:drawablePadding="5dp"
         android:drawableTint="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/image"
-        app:layout_constraintStart_toStartOf="@id/image"/>
+        app:layout_constraintBottom_toBottomOf="@id/wallpaper"
+        app:layout_constraintStart_toStartOf="@id/wallpaper"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
