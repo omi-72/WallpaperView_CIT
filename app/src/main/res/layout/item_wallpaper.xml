@@ -5,10 +5,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
+        android:id="@+id/image"
+        app:layout_constraintDimensionRatio="1:2"
+        android:scaleType="centerCrop"
         android:src="@drawable/Nature_Pink"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/wallName"
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_baseline_adjust_24"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
