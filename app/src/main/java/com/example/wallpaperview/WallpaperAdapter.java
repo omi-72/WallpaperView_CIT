@@ -33,10 +33,13 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull WallpaperViewHolder holder, int position) {
 
+        Wallpaper wallpaper= wallpapers.get(position);
+        holder.nameText.setText(wallpaper.getName());
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return wallpapers.size();
     }
 }
