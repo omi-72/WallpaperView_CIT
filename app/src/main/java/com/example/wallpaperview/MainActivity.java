@@ -22,5 +22,7 @@ public class MainActivity extends AppCompatActivity {
         wallpaperList.add(new Wallpaper("https://wallpaper.dog/large/17164618.jpg","Nature"));
         wallpaperList.add(new Wallpaper("https://3dandroidwallpaper.com/wp-content/uploads/2018/03/Wallpaper-Spring-Nature-Android.jpg","Sakura"));
         wallpaperList.add(new Wallpaper("https://www.wallpaperuse.com/wallp/8-87885_m.jpg","Nature"));
+
+
     }
 }
