@@ -38,7 +38,14 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> 
         Wallpaper wallpaper= wallpapers.get(position);
         holder.nameText.setText(wallpaper.getName());
 
-        Glide.with(context).load(wallpaper.getUrl()).into(holder.imageView);
+        Glide.with(context).load(wallpaper.getUrl()).placeholder(R.drawable.placeholder).into(holder.imageView);
+
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+            }
+        });
 
     }
 
