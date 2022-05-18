@@ -1,17 +1,21 @@
 package com.example.wallpaperview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        recyclerView = findViewById(R.id.recyclerView);
 
         ArrayList<Wallpaper> wallpaperList =new ArrayList<>();
 
@@ -24,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
         wallpaperList.add(new Wallpaper("https://www.wallpaperuse.com/wallp/8-87885_m.jpg","Nature"));
 
 
+        WallpaperAdapter adapter =new WallpaperAdapter(wallpaperList,MainActivity.this);
+        recyclerView.setAdapter(adapter);
     }
 }

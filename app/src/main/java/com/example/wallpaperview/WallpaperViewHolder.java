@@ -12,7 +12,7 @@ public class WallpaperViewHolder extends RecyclerView.ViewHolder {
     public ImageView imageView;
     public TextView nameText;
 
-    public WallpaperViewHolder(@NonNull View itemView) {
+    public WallpaperViewHolder(@NonNull final View itemView) {
         super(itemView);
 
         imageView= itemView.findViewById(R.id.wallpaper);

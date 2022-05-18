@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Jis/WallpaperView/app/src/main/res/drawable/ic_baseline_adjust_24.xml" value="0.1255" />
+        <entry key="..\:/Users/Jis/WallpaperView/app/src/main/res/layout-v23/item_wallpaper.xml" value="0.1" />
         <entry key="..\:/Users/Jis/WallpaperView/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Jis/WallpaperView/app/src/main/res/layout/item_wallpaper.xml" value="0.22" />
       </map>

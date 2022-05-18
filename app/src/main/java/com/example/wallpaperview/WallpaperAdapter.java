@@ -12,17 +12,17 @@ import java.util.ArrayList;
 
 public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> {
 
-    ArrayList<Wallpaper>wallpapers;
+    ArrayList<Wallpaper> wallpapers;
     Context context;
 
-    public WallpaperAdapter(ArrayList<Wallpaper> wallpapers, Context context) {
+    public WallpaperAdapter(final ArrayList<Wallpaper> wallpapers, final Context context) {
         this.wallpapers = wallpapers;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public WallpaperViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public WallpaperViewHolder onCreateViewHolder(@NonNull final ViewGroup parent, final int viewType) {
 
         View view = LayoutInflater.from(context).inflate(R.layout.item_wallpaper,parent,false);
 
@@ -31,7 +31,7 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull WallpaperViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final WallpaperViewHolder holder, final int position) {
 
         Wallpaper wallpaper= wallpapers.get(position);
         holder.nameText.setText(wallpaper.getName());
@@ -40,6 +40,7 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> 
 
     @Override
     public int getItemCount() {
+
         return wallpapers.size();
     }
 }
