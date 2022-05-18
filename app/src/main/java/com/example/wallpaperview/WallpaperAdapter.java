@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> {
@@ -35,6 +37,8 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> 
 
         Wallpaper wallpaper= wallpapers.get(position);
         holder.nameText.setText(wallpaper.getName());
+
+        Glide.with(context).load(wallpaper.getUrl()).into(holder.imageView);
 
     }
 
