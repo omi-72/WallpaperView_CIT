@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullActivity">
+
+    <ImageView
+        android:id="@+id/wallpaper"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:2"
+        android:src="@drawable/cute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/wallName"
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_baseline_adjust_24"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/purple_200"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/wallpaper"
+        app:layout_constraintStart_toStartOf="@id/wallpaper"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

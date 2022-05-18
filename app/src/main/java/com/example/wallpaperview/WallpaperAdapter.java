@@ -43,7 +43,7 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> 
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+
             }
         });
 
