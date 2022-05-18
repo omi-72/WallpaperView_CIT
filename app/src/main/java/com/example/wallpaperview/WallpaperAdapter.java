@@ -1,6 +1,7 @@
 package com.example.wallpaperview;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +43,14 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperViewHolder> 
 
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(final View view) {
+
+                Intent intent = new Intent(context,FullActivity.class);
+                intent.putExtra("url",wallpaper.getUrl());
+                intent.putExtra("name",wallpaper.getName());
+
+                context.startActivity(intent);
+
 
             }
         });
